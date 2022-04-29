@@ -13,5 +13,4 @@ sudo chgrp -R ubuntu /data/
 sed -i "38i\\\tlocation /hbnb_static/\
  {\n\t\t alias /data/web_static/\
  current/;\n\t}\n" /etc/nginx/sites-available/default
-service nginx start
-
+service nginx restart
